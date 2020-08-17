@@ -20,10 +20,10 @@ let toDo_list: Array<any> = [{TaskName:"GRAPHQL",TaskDate:"12/july/2020",TaskSta
 
 for(var i= 0; i< toDo_list.length;i++){
   if(toDo_list[4].TaskStatus ==="done"){
-    toDo_list[4].TaskStatus = "pending";
+    toDo_list[4].TaskStatus = "Pending";
   }
   else{
-    toDo_list[4].TaskStatus = "done";
+    toDo_list[4].TaskStatus = "Done";
   }
   console.log( toDo_list[i].TaskName + " | " + toDo_list[i].TaskDate + " : "+ toDo_list[i].TaskStatus)
 }
