@@ -18,15 +18,17 @@ let toDo_list: Array<any> = [{TaskName:"GRAPHQL",TaskDate:"12/july/2020",TaskSta
 {TaskName:"ANGULERJS",TaskDate:"12/March/2020",TaskStatus:"Pending"},
 {TaskName:"IONIC",TaskDate:"12/july/2020",TaskStatus:"Done"}]
 
-for(var i= 0; i< toDo_list.length;i++){
-  if(toDo_list[4].TaskStatus ==="Done"){
-    toDo_list[4].TaskStatus = "Pending";
-  }
-  else{
-    toDo_list[4].TaskStatus = "Done";
-  }
-  console.log( toDo_list[i].TaskName + " | " + toDo_list[i].TaskDate + " : "+ toDo_list[i].TaskStatus)
-}
-// void four(toDo_list[5].TaskName){
 
-// }
+list(toDo_list);
+
+function list(todo){
+  for(var i= 0; i< todo.length;i++){
+    if(todo[4].TaskStatus ==="Done"){
+      todo[4].TaskStatus = "Pending";
+    }
+    else{
+      todo[4].TaskStatus = "Done";
+    }
+    console.log( toDo_list[4].TaskName + " | " + toDo_list[4].TaskDate + " : "+ toDo_list[4].TaskStatus)
+  }
+}
