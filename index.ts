@@ -29,6 +29,6 @@ function list(todo){
     else{
       todo[4].TaskStatus = "Done";
     }
-    console.log( toDo_list[4].TaskName + " | " + toDo_list[4].TaskDate + " : "+ toDo_list[4].TaskStatus)
+    console.log( todo[4].TaskName + " | " + todo[4].TaskDate + " : "+ todo[4].TaskStatus)
   }
 }
