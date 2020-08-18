@@ -16,19 +16,30 @@ let toDo_list: Array<any> = [{TaskName:"GRAPHQL",TaskDate:"12/july/2020",TaskSta
 {TaskName:"C#",TaskDate:"12/july/2019",TaskStatus:"Done"},
 {TaskName:"REACTJS",TaskDate:"12/February/2020",TaskStatus:"Done"},
 {TaskName:"ANGULERJS",TaskDate:"12/March/2020",TaskStatus:"Pending"},
-{TaskName:"IONIC",TaskDate:"12/july/2020",TaskStatus:"Done"}]
+{TaskName:"IONIC",TaskDate:"12/july/2020",TaskStatus:"Done"}];
 
+update(toDo_list);
 
-list(toDo_list);
-
-function list(todo){
-  for(var i= 0; i< todo.length;i++){
-    if(todo[4].TaskStatus ==="Done"){
-      todo[4].TaskStatus = "Pending";
-    }
-    else{
-      todo[4].TaskStatus = "Done";
-    }
-    console.log( todo[4].TaskName + " | " + todo[4].TaskDate + " : "+ todo[4].TaskStatus)
+function update(toDo_list){
+  if(toDo_list[4].TaskStatus ==="Done"){
+    return toDo_list[4].TaskStatus = "Pending";
+  }
+  else{
+    return toDo_list[4].TaskStatus = "Done";
   }
 }
+
+console.log( toDo_list[4].TaskName + " | " + toDo_list[4].TaskDate + " : " + toDo_list[4].TaskStatus)
+// list(toDo_list);
+
+// function list(todo){
+//   for(var i= 0; i< todo.length;i++){
+//     if(todo[4].TaskStatus ==="Done"){
+//       todo[4].TaskStatus = "Pending";
+//     }
+//     else{
+//       todo[4].TaskStatus = "Done";
+//     }
+//     console.log( todo[4].TaskName + " | " + todo[4].TaskDate + " : "+ todo[4].TaskStatus)
+//   }
+// }
